@@ -9,6 +9,7 @@
 - Prisma
 - PostgreSQL
 
+<br>
 
 - digite "npm install" para instalar as tependências em sua máquina local
 - depois rode o projeto usando "npm ruv dev" ou "npx next dev"
@@ -16,4 +17,5 @@
 
 ~ Estado inicial ~
 - digite "localhost:3000/login" para acessar o login e "localhost:3000/cadastro" para acessar o cadastro.
+
 PS: Ainda em fase de desenvolvimento
