@@ -13,7 +13,7 @@ import { Input } from '@/components/ui/input';
 import { Check, MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '@/components/logo';  // Atualize para importar o componente Logo
+import Logo from '@/components/logo'; 
 import womanImg from './assets/woman.svg';
  
 export default async function Home() {
@@ -55,20 +55,20 @@ export default async function Home() {
         <h1 className="md:text-6xl text-2xl font-bold mt-8 md:mt-16">
           Simplifique Seus Estudos{' '}
         </h1>
-        <p className="text-gray-500 mt-4 text-sm md:text-xl max-w-3xl mx-auto">
+        <p className="text-gray-600 mt-4 text-sm md:text-xl max-w-3xl mx-auto">
           Deixe que nós fazemos a curadoria para você. Assine nossa plataforma e
-          receba todos os meses um ebook novo de programação.
+          receba todos os meses, no mínimo, um ebook novo de programação.
         </p>
         <form className="md:mt-16 mt-10">
           <div className="flex gap-2 justify-center">
             <Input
               placeholder="Coloque seu email"
               type="text"
-              className="max-w-sm border-gray-300 border"
+              className="max-w-sm border-gray-900 border"
             />
             <Button>Assine Agora</Button>
           </div>
-          <p className="text-xs text-muted-foreground mt-2">
+          <p className="text-1xl text-muted-foreground mt-2">
             Comece sua assinatura agora mesmo. Cancele quando quiser.{' '}
           </p>
         </form>
@@ -86,16 +86,16 @@ export default async function Home() {
             />
             <ul className="md:text-2xl text-lg text-muted-foreground space-y-4 md:space-y-6 flex-shrink-0">
               <li className="flex items-center justify-between gap-4">
-                Acesso a 1 ebook por mês{' '}
-                <Check size={24} className="text-green-600" />
+                Escolha um plano
+                <Check size={28} className="text-green-600" />
               </li>
               <li className="flex items-center justify-between gap-4">
-                Curadoria especial
-                <Check size={24} className="text-green-600" />
+                Pague com cartão ou pix
+                <Check size={28} className="text-green-600" />
               </li>
               <li className="flex items-center justify-between gap-4">
-                Cancele quando quiser
-                <Check size={24} className="text-green-600" />
+                Tenha acesso imediato
+                <Check size={28} className="text-green-600" />
               </li>
             </ul>
           </div>
@@ -113,7 +113,7 @@ export default async function Home() {
         <div className="flex justify-center">
           <PricingCard />
         </div>
-        
+
       </section>
       <section className="bg-white md:py-16 py-10 text-center">
         <h2 className="md:text-6xl text-2xl font-bold md:mt-16">
@@ -125,12 +125,12 @@ export default async function Home() {
         </p>
         <Button className="mt-14 w-96">Assine Agora</Button>
         <p className="text-xs text-muted-foreground mt-2">
-          Comece sua assinatura agora mesmo. Cancele quando quiser.{' '}
+          Comece sua assinatura agora mesmo. Cancele quando quiser.
         </p>
         <footer className="mt-16 border-t border-gray-300 pt-10">
           <Logo />
           <p className="text-muted-foreground">
-            © 2024 LivroSaaS. Todos os direitos reservados.
+            © 2024 | Criado por: David Ben | Todos os Direitos Reservados.
           </p>
         </footer>
       </section>

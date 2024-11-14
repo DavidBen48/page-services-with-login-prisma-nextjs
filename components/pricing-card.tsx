@@ -17,11 +17,11 @@ interface PricingCardProps {
   planFeatures: string[];
 }
 
-interface descriptionForPlans {
+interface descriptionKeysValues {
   [key: string]: string[];
 }
 
-const planDescriptions: descriptionForPlans = {
+const planDescriptions: descriptionKeysValues = {
   "Plano Básico": [
     "Acesso a 1 ebook por mês",
     "Curadoria Básica",
@@ -65,7 +65,7 @@ function PricingCard({ title, description, price, pricePerMonth, planFeatures }:
           ))}
         </ul>
       </CardContent>
-      <CardFooter>
+      <CardFooter className='flex justify-center'>
         <Button className="w-full">Assine Agora</Button>
       </CardFooter>
     </Card>
